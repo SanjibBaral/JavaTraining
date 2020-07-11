@@ -11,14 +11,16 @@ public class RunnableManager {
 		
 		t1.start();
 		t2.start();
-		for(int i=0;i<20;i++) {
+		t1.setPriority(Thread.MIN_PRIORITY);
+		for(int i=0;i<200;i++) {
 			System.out.println("Main Method executed for "+i+" times.");
-			try {
-				Thread.sleep(500);
+			/**try {
+			 
+				Thread.sleep(100);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
+			}*/
 		}
 	}
 

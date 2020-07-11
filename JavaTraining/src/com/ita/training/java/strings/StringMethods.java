@@ -6,7 +6,7 @@ public class StringMethods {
 	int marks[]= new int[6]; //integer array of size 6
 	int [] subjects=new int[4]; //integer array of size 4
 	 public static void main(String[] args) {
-		//String[] names= {"A","B","C"};
+		String[] names= {"A","B","C"};
 		String str=" Hello this is my first program with String Manipulation. ";
 		System.out.println("---Printing character at index 4.---");
 		System.out.println(str.charAt(4));
@@ -29,5 +29,9 @@ public class StringMethods {
 		//Trim Method of string
 		System.out.println(str.trim());
 		
+		//Printing String array using for each loop
+		for(String c:names) {
+			System.out.println(c);
+		}
 	}
 }
